@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="662,442" caption="0,0,0,35">
+    <VBox bkcolor="bk_wnd_darkcolor">
+        <VBox width="stretch" height="76" bkcolor="baidu_blue">
+            <HBox height="25">
+                <Control />
+                <Button class="btn_wnd_min" name="minbtn" margin="4,6,0,0"/>
+                <Box width="21" margin="4,6,0,0">
+                    <Button class="btn_wnd_max" name="maxbtn"/>
+                    <Button class="btn_wnd_restore" name="restorebtn" visible="false"/>
+                </Box>
+                <Button class="btn_wnd_close" name="closebtn" margin="4,6,8,0"/>
+            </HBox>
+            <HBox width="stretch" >
+                <Control />
+                <Label bkimage="login_logo.png" />
+                <Control />
+            </HBox>
+        </VBox>
+        <HBox width="stretch" bkcolor="white">
+            <!-- left start -->
+            <VBox width="300" >
+                <!-- 扫一扫登录 -->
+                <HBox width="stretch" height="auto" padding="0,35,0,0" childmargin="4">
+                    <Control />
+                    <Label bkimage="qrcode.png" />
+                    <Label text="扫一扫登录" font="system_16" margin="0,-5,0,0" />
+                    <Control />
+                </HBox>
+                <HBox width="stretch" height="auto" padding="0,25,0,0" childmargin="4">
+                    <Control />
+                    <Label text="请使用" font="system_14" margin="0,0,0,0" />
+                    <Label name="app_tip" text="百度网盘App" font="system_underline_14" margin="3,0,0,0" normaltextcolor="blue" cursortype="hand" />
+                    <Label text="扫码登录" font="system_14" margin="3,0,0,0" />
+                    <Control />
+                </HBox>
+                <HBox width="stretch" height="180" padding="0,25,0,25" childmargin="4" >
+                    <Control />
+                    <Box width="154" height="154" bordercolor="gray" bordersize="1" >
+                        <Label name="login_qrcode" bkimage="qcode.png" width="134" height="134" margin="10,10,10,10" fadeinoutxfromright="true" />
+                    </Box>
+                    <Control />
+                </HBox>
+                <HBox width="stretch" height="auto" padding="0,20,0,0"  >
+                    <Control />
+                    <Button name="btn_refush_qcode" text="刷新二维码" height="30" width="100" bordercolor="blue" bordersize="1" normaltextcolor="blue" borderround="4,4"  />
+                    <Control />
+                </HBox>
+                <Control />
+            </VBox>
+            <!-- left end -->
+            <Control width="40" />
+            <VBox width="310" >
+                <HBox width="stretch" height="auto" padding="0,35,0,0" childmargin="4">
+                    <Label name="debug_label" text="账号密码登录" font="system_16" />
+                    <Control />
+                    <Label text="短信快捷登录>" font="system_14" normaltextcolor="blue" />
+                </HBox>
+                <VBox padding="0,30,0,0">
+                    <HBox bordercolor="gray" bordersize="1" width="290" height="40">
+                        <Label bkimage="person.png" margin="10,10,0,0" />
+                        <RichEdit bordercolor="white" bordersize="1" width="220" height="20" margin="10,10,0,0" multiline="false" autohscroll="true" />
+                    </HBox>
+                    <HBox bordercolor="gray" bordersize="1" width="290" height="40" margin="0,15,0,0">
+                        <Label bkimage="passwd.png" margin="10,10,0,0" />
+                        <RichEdit bordercolor="white" bordersize="1" width="220" height="20" margin="10,10,0,0" multiline="false" autohscroll="true" password="true" />
+                    </HBox>
+                    <HBox margin="0,15,0,0">
+                        <CheckBox name="remember_pass" margin="5,0,5,0" normalimage="check_no.png" selectednormalimage="check_yes.png" cursortype="hand" />
+                        <Label name="label_remember_password" text="记住密码" cursortype="hand" />
+						
+                        <CheckBox name="auto_login" margin="15,0,5,0" normalimage="check_no.png" selectednormalimage="check_yes.png" cursortype="hand" />
+                        <Label text="自动登录" cursortype="hand" />
+						
+                        <Control />
+                        <Label text="忘记密码" font="system_14" normaltextcolor="blue" />
+                    </HBox>
+                    <Button name="btn_login" text="登录" width="290" height="40" bkcolor="blue" normaltextcolor="white" font="system_16" margin="0,20,0,0" cursortype="hand" />
+                    <HBox margin="0,45,0,0">
+                        <Label text="注册账号" font="system_14" normaltextcolor="blue" />
+                        <Control />
+                        <Label bkimage="logo_wechat.png"  />
+                        <Label bkimage="logo_sinaweibo.png" margin="10,0,0,0" />
+                        <Label bkimage="logo_qq.png" margin="10,0,0,0" />
+                    </HBox>
+                </VBox>
+            </VBox>
+        </HBox>
+    </VBox>
+</Window>
+
+
+
+
+
+
+
+
